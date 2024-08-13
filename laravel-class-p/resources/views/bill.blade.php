@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +15,17 @@
                     <th>name</th>
                     <th>email</th>
                     <th>phone</th>
-                    <th>created at</th>
-                    <th>updated at</th>
-                </tr>
+                    
             </thead>
             <tbody>
-                @foreach ($bill as $cat)
+                @foreach ($amounts as $cats)
                 <tr>
                     <th scope="row">{{$loop->iteration}}</th>
-                    <th>{{ $cat->Name }}</th>
-                    <th>{{ $cat->email }}</th>
-                    <th>{{ $cat->phone }}</th>
-                    <th>{{ $cat->created at }}</th>
-                    <th>{{ $cat->updated at }}</th>
+                    <th>{{ $cats->id }}</th>
+                    <th>{{ $cats->name }}</th>
+                    <th>{{ $cats->email }}</th>
+                    <th>{{ $cats->phone }}</th>
+                    
                 </tr>
                 @endforeach
             </tbody>
@@ -36,4 +34,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
-</html>
+</html> -->
