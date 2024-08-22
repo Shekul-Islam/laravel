@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx" class="js">
+<html lang="en" class="js">
 
 <head>
     <meta charset="utf-8" />
@@ -9,9 +9,10 @@
         content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers." />
     <link rel="shortcut icon" href="/demo7/images/favicon.png" />
     <title>Dashboard - Pharmacy Manegment | DashLite Admin Template</title>
-  
-    <link rel="stylesheet" href="{{ asset('css/dashlite.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
+    {{-- <link rel="stylesheet" href="../../indexx.css" /> --}}
+    {{-- <link id="skin-default" rel="stylesheet" href="{{dashlite.css}}" /> --}}
+    {{-- <link rel="stylesheet" href="../css/dashlite.css"/> --}}
+    <link rel="stylesheet" href="{{asset('css/dashlite.css') }}">
 
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91615293-4"></script>
@@ -28,6 +29,9 @@
 </head>
 
 <body class="nk-body ui-rounder npc-default has-sidebar no-touch nk-nio-theme as-mobile">
+    <div class="hello" >
+        hello man
+    </div>
     <br><br>
     <div class="nk-app-root">
         <div class="nk-sidebar nk-sidebar-mobile" data-content="sidebarMenu">
@@ -2329,14 +2333,10 @@
                 alt="Investorm"></div>
         <div class="pmo-st-text">Looking for Advanced <br> Investment Platform?</div>
     </a>
-  
-    <script src="{{ asset('js/bundle.js') }}"></script>
-    <script src="{{ asset('js/demo-settings.js') }}"></script>
-    <script src="{{ asset('js/gd-pharmacy.js') }}"></script>
-    <script src="{{ asset('js/scripts.js') }}"></script>
-    <script src="{{ asset('js/chart-ecommerce.js') }}"></script>
-   
-   
+    <script src="../js/bundle.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/demo-settings.js"></script>
+    <script src="../js/charts/gd-pharmacy.js"></script>
 </body>
 
 </html>
