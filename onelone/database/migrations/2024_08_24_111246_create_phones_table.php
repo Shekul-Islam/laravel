@@ -16,8 +16,13 @@ return new class extends Migration
             $table->string('name');
             $table->string('model');
             $table->timestamps();
+            $table->foreignId('customer_id');
+            $table->timestamps();
         });
         
+          
+    
+
     }
 
     /**
