@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('model');
+            $table->string('customer_id');
             $table->timestamps();
         });
-        
+
     }
 
     /**
