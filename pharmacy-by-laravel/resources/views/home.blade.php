@@ -22,14 +22,14 @@
     <div class="nk-app-root">
 
         @include('admin-layout.sidebar')
-        <!-- main @s -->
+        <!-- main  -->
         <div class="nk-main ">
-            <!-- wrap @s -->
+            <!-- wrap  -->
             <div class="nk-wrap ">
 
                 @include('admin-layout.navbar')
 
-                <!-- content @s -->
+                <!-- content -->
                 <div class="nk-content ">
                     <div class="container-fluid">
                         <div class="nk-content-inner">
@@ -39,13 +39,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- content @e -->
+                <!-- content -->
             </div>
-            <!-- wrap @e -->
+            <!-- wrap -->
         </div>
-        <!-- main @e -->
+        <!-- main -->
     </div>
-    <!-- app-root @e -->
+    <!-- app-root -->
     <!-- JavaScript -->
     <script src="{{ asset('js/bundle.js')}}"></script>
     <script src="{{ asset('js/scripts.js')}}"></script>

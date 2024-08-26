@@ -264,5 +264,5 @@
            </div><!-- .nk-header-wrap -->
        </div><!-- .container-fliud -->
    </div>
-   <!-- main header @e -->
+   <!-- main header -->
 </div>
