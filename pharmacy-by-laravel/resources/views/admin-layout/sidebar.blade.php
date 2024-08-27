@@ -1,7 +1,7 @@
 <div class="nk-sidebar" data-content="sidebarMenu">
     <div class="nk-sidebar-bar">
         <div class="nk-apps-brand">
-            <a href="html/index.html" class="logo-link">
+            <a href="{{ url('/home')}}" class="logo-link">
                 <img class="logo-light logo-img" src="./images/logo-small.png" srcset="./images/logo-small2x.png 2x" alt="logo">
                 <img class="logo-dark logo-img" src="./images/logo-dark-small.png" srcset="./images/logo-dark-small2x.png 2x" alt="logo-dark">
             </a>
@@ -106,7 +106,7 @@
                 <h5 class="title">Pharmacy</h5>
                 <ul class="nk-menu">
                     <li class="nk-menu-item">
-                        <a href="html/pharmacy/index.html" class="nk-menu-link">
+                        <a href="{{url('/home')}}" class="nk-menu-link">
                             <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
                             <span class="nk-menu-text">Dashboard</span>
                         </a>
@@ -118,7 +118,7 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/add-customer.html" class="nk-menu-link"><span class="nk-menu-text">Add Customer</span></a>
+                                <a href="{{ url('/customer.addcustomer')}}" class="nk-menu-link"><span class="nk-menu-text">Add Customer</span></a>
                             </li>
                             <li class="nk-menu-item">
                                 <a href="html/pharmacy/customer.html" class="nk-menu-link"><span class="nk-menu-text">Customer List</span></a>

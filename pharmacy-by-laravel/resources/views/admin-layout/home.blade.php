@@ -14,45 +14,38 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('css/dashlite.css') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('css/theme.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/editors/quill.css')}}">
 
 
 </head>
 
-<body class="nk-body ui-rounder npc-default has-sidebar ">
-
-    <div class="nk-app-root">
+<body class="nk-main ">
+     <!-- wrap  -->
+     <div class="nk-wrap ">
 
         @include('admin-layout.sidebar')
-        <!-- main  -->
-        <div class="nk-main ">
-            <!-- wrap  -->
-            <div class="nk-wrap ">
 
-                @include('admin-layout.navbar')
+        @include('admin-layout.navbar')
 
-                <!-- content -->
-                <div class="nk-content ">
-                    <div class="container-fluid">
-                        <div class="nk-content-inner">
-                            <div class="nk-content-body">
-                               @yield('content')
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- content -->
-            </div>
-            <!-- wrap -->
-        </div>
-        <!-- main -->
+        <!-- content -->
+        <section class="nk-content ">
+            @yield('content')
+        </section>
+        <!-- content -->
+
     </div>
+    <!-- wrap -->
+
+
     <!-- app-root -->
     <!-- JavaScript -->
     <script src="{{ asset('js/bundle.js')}}"></script>
     <script src="{{ asset('js/scripts.js')}}"></script>
     <script src="{{ asset('js/quill.js')}}"></script>
+    <script src="{{ asset('js/charts/gd-pharmacy.js')}}"></script>
 
-    <link rel="stylesheet" href="{{ asset('css/editors/quill.css')}}">
+
+
 
 
 </body>

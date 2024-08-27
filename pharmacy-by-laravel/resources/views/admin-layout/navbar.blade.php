@@ -1,5 +1,5 @@
 <div>
-    <!-- main header @s -->
+    <!-- main header -->
     <div class="nk-header nk-header-fixed nk-header-fluid is-light">
        <div class="container-fluid">
            <div class="nk-header-wrap">
