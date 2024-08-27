@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    
+
     <div class="text-center">
         <h2>One to One Relationship</h2>
     </div>
@@ -28,7 +28,7 @@
 
             <tbody>
                 @foreach ($customers as $data)
-              
+
                 <tr>
                     <td>{{ $data->name }}</td>
                     <td>{{ $data->address }}</td>

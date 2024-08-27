@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('klasses', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->bigInteger('student_id');
             $table->timestamps();
         });
     }
