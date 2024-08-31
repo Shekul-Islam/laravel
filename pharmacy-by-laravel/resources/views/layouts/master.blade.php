@@ -23,9 +23,9 @@
      <!-- wrap  -->
      <div class="nk-wrap ">
 
-        @include('admin-layout.sidebar')
+        @include('includes.navbar')
 
-        @include('admin-layout.navbar')
+        @include('includes.sidebar')
 
         <!-- content -->
         <section class="nk-content ">
