@@ -31,6 +31,33 @@ Route::get('/medicine.medicinedetails', function(){
 Route::get('/medicine.medicinelist', function(){
     return view('admin-pages.medicine.medicinelist');
 });
+
+Route::get('/manufacturer.addmanufacturer', function(){
+    return view('admin-pages.manufacturer.addmanufacturer');
+});
+
+Route::get('/manufacturer.manufacturerlist', function(){
+    return view('admin-pages.manufacturer.manufacturerlist');
+});
+
+Route::get('/manufacturer.manufacturerledger', function(){
+    return view('admin-pages.manufacturer.manufacturerledger');
+});
+
+Route::get('/returns.addwastagereturn', function(){
+    return view('admin-pages.returns.addwastagereturn');
+});
+Route::get('/returns.wastagereturnlist', function(){
+    return view('admin-pages.returns.wastagereturnlist');
+});
+
+Route::get('/returns.addmanufacturerreturn', function(){
+    return view('admin-pages.returns.addmanufacturerreturn');
+});
+Route::get('/returns.manufacturerreturnlist', function(){
+    return view('admin-pages.returns.manufacturerreturnlist');
+});
+
 // Route::get('/admin/customer/add', function () {
 //     return view('admin.customer.addcustomer');
 // })->name('admin.customer.add');
