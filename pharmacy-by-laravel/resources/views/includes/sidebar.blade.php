@@ -1,5 +1,5 @@
 <div class="nk-sidebar" data-content="sidebarMenu">
-    <div class="nk-sidebar-bar">
+    {{-- <div class="nk-sidebar-bar">
         <div class="nk-apps-brand">
             <a href="{{ route('dashboard')}}" class="logo-link">
                 <img class="logo-light logo-img" src="./images/logo-small.png" srcset="./images/logo-small2x.png 2x" alt="logo">
@@ -99,11 +99,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="nk-sidebar-main is-light">
         <div class="nk-sidebar-inner" data-simplebar>
             <div class="nk-menu-content menu-active" data-content="navPharmacy">
-                <h5 class="title">Pharmacy</h5>
+
+                    <div class=" d-flex mx-auto">
+                        <a href="{{ route('dashboard')}}" class="logo-link">
+                            {{-- <img class="logo-light logo-img" src="./images/logo-small.png" srcset="./images/logo-small2x.png 2x" alt="logo"> --}}
+                            <img class="logo-dark logo-img" src="./images/logo-dark-small.png" srcset="./images/logo-dark-small2x.png 2x" alt="logo-dark">
+
+                        </a>
+                        <h5 class="title">Pharmacy Management</h5>
+
+                    </div>
+
+
+
                 <ul class="nk-menu">
                     <li class="nk-menu-item">
                         <a href="{{ route('dashboard')}}" class="nk-menu-link">
@@ -135,13 +147,13 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/add-medicine.html" class="nk-menu-link"><span class="nk-menu-text">Add Medicine</span></a>
+                                <a href="{{ url('medicine.addmedicine')}}" class="nk-menu-link"><span class="nk-menu-text">Add Medicine</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/medicine-list.html" class="nk-menu-link"><span class="nk-menu-text">Medicine List</span></a>
+                                <a href="{{ url('medicine.medicinelist')}}" class="nk-menu-link"><span class="nk-menu-text">Medicine List</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/medicine-details.html" class="nk-menu-link"><span class="nk-menu-text">Medicine Details</span></a>
+                                <a href="{{ url('medicine.medicinedetails')}}" class="nk-menu-link"><span class="nk-menu-text">Medicine Details</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
@@ -152,10 +164,10 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/manufacturer.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer List</span></a>
+                                <a href="{{ url('manufacturer.manufacturerlist')}}" class="nk-menu-link"><span class="nk-menu-text">Manufacturer List</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/manufacturer-ledger.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Ledger</span></a>
+                                <a href="{{ url('manufacturer.manufacturerledger')}}" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Ledger</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
@@ -166,16 +178,16 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/add-wastage-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Wastage Return</span></a>
+                                <a href="{{ url('return.addwastagereturn')}}" class="nk-menu-link"><span class="nk-menu-text">Add Wastage Return</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/wastage-return.html" class="nk-menu-link"><span class="nk-menu-text">Wastage Return List</span></a>
+                                <a href="{{ url('return.wastagereturnlist')}}" class="nk-menu-link"><span class="nk-menu-text">Wastage Return List</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/add-manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Manufacture Return</span></a>
+                                <a href="{{ url('return.addmanufacturerreturn')}}" class="nk-menu-link"><span class="nk-menu-text">Add Manufacture Return</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Return List</span></a>
+                                <a href="{{ url('return.manufacturerreturnlist')}}" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Return List</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
@@ -186,16 +198,16 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/member.html" class="nk-menu-link"><span class="nk-menu-text">Member</span></a>
+                                <a href="{{ url('human-resource.employee')}}" class="nk-menu-link"><span class="nk-menu-text">Employee</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/members-profile-regular.html" class="nk-menu-link"><span class="nk-menu-text">Members Profile</span></a>
+                                <a href="{{ url('human-resource.employeesprofile')}}" class="nk-menu-link"><span class="nk-menu-text">Employee's Profile</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/attendence.html" class="nk-menu-link"><span class="nk-menu-text">Attendence</span></a>
+                                <a href="{{ url('human-resource.attendance')}}" class="nk-menu-link"><span class="nk-menu-text">Attendence</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/salary.html" class="nk-menu-link"><span class="nk-menu-text">Salary</span></a>
+                                <a href="{{ url('human-resource.salary')}}" class="nk-menu-link"><span class="nk-menu-text">Salary</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
@@ -206,16 +218,16 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/income-list.html" class="nk-menu-link"><span class="nk-menu-text">Income</span></a>
+                                <a href="{{ url('finance.income')}}" class="nk-menu-link"><span class="nk-menu-text">Income</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/expense-list.html" class="nk-menu-link"><span class="nk-menu-text">Expence</span></a>
+                                <a href="{{ url('finance.expense')}}" class="nk-menu-link"><span class="nk-menu-text">Expence</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/invoice-list.html" class="nk-menu-link"><span class="nk-menu-text">Invoice List</span></a>
+                                <a href="{{ url('finance.invoicelist')}}" class="nk-menu-link"><span class="nk-menu-text">Invoice List</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/invoice-details.html" class="nk-menu-link"><span class="nk-menu-text">Invoice Details</span></a>
+                                <a href="{{ url('finance.invoicedetails')}}" class="nk-menu-link"><span class="nk-menu-text">Invoice Details</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
@@ -226,13 +238,13 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/sales-report.html" class="nk-menu-link"><span class="nk-menu-text">Sales Report</span></a>
+                                <a href="{{ url('report.salesreport')}}" class="nk-menu-link"><span class="nk-menu-text">Sales Report</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/purchase-report.html" class="nk-menu-link"><span class="nk-menu-text">Purchase Report</span></a>
+                                <a href="{{ url('report.purchasereport')}}" class="nk-menu-link"><span class="nk-menu-text">Purchase Report</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/pharmacy/stock-report.html" class="nk-menu-link"><span class="nk-menu-text">Stock Report</span></a>
+                                <a href="{{ url('report.stockreport')}}" class="nk-menu-link"><span class="nk-menu-text">Stock Report</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->

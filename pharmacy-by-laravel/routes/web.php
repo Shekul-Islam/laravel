@@ -20,6 +20,17 @@ Route::get('/customer.customerledger', function(){
     return view('admin-pages.customer.customerledger');
 });
 
+Route::get('/medicine.addmedicine', function(){
+    return view('admin-pages.medicine.addmedicine');
+});
+
+Route::get('/medicine.medicinedetails', function(){
+    return view('admin-pages.medicine.medicinedetails');
+});
+
+Route::get('/medicine.medicinelist', function(){
+    return view('admin-pages.medicine.medicinelist');
+});
 // Route::get('/admin/customer/add', function () {
 //     return view('admin.customer.addcustomer');
 // })->name('admin.customer.add');

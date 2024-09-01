@@ -462,12 +462,7 @@
     </div>
 </div>
 <!-- content @e -->
-</div>
-<!-- wrap @e -->
-</div>
-<!-- main @e -->
-</div>
-<!-- app-root @e -->
+
 <!--Delete-->
 <div class="modal fade" tabindex="-1" id="modalDelete">
 <div class="modal-dialog" role="document">
@@ -553,7 +548,7 @@
             </div>
         </div>
 </div>
-</form>
+    </form>
 </div><!-- .modal-body -->
 </div><!-- .modal-content -->
 </div><!-- .modal-dialog -->
