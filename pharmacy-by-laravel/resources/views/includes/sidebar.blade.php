@@ -1,5 +1,5 @@
 <div class="nk-sidebar" data-content="sidebarMenu">
-   
+
     <div class="nk-sidebar-main is-light">
         <div class="nk-sidebar-inner" data-simplebar>
             <div class="nk-menu-content menu-active" data-content="navPharmacy">

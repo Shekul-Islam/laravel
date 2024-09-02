@@ -58,6 +58,25 @@ Route::get('/returns.manufacturerreturnlist', function(){
     return view('admin-pages.returns.manufacturerreturnlist');
 });
 
+Route::get('/human-resource.employee', function(){
+    return view('admin-pages.human-resource.employee');
+});
+
+Route::get('/human-resource.employeesprofile', function(){
+    return view('admin-pages.human-resource.employeesprofile');
+});
+
+Route::get('/human-resource.attendance', function(){
+    return view('admin-pages.human-resource.attendance');
+});
+
+Route::get('/human-resource.salary', function(){
+    return view('admin-pages.human-resource.salary');
+});
+
+Route::get('/finance.income', function(){
+    return view('admin-pages.finance.income');
+});
 // Route::get('/admin/customer/add', function () {
 //     return view('admin.customer.addcustomer');
 // })->name('admin.customer.add');
