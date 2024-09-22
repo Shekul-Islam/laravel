@@ -40,7 +40,7 @@ export default function Navbar({ toggleSidebar, themeSwitcher, darkMode }) {
     })
 
     return (
-        <div className='py-8 px-4 md:px-6 flex justify-between items-center min-w-full sticky top-0 z-20 h-16 border-b bg-white dark:border-gray-900 dark:bg-gray-950'>
+        <div className='py-8 px-4 md:px-6 flex justify-between items-center min-w-full sticky top-0 z-20 h-16 border-b bg-amber-50 dark:border-gray-900 dark:bg-gray-950'>
             <div className='flex items-center gap-4'>
                 <button className='text-gray-700 dark:text-gray-400 hidden md:block' onClick={toggleSidebar}>
                     <IconAlignLeft size={18} strokeWidth={1.5} />

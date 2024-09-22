@@ -17,3 +17,5 @@ Route::post('/store',[ProductController::class, 'filestore'])->name('store');
 Route::get('/edit/{id}',[ProductController::class, 'editData'])->name('edit');
 Route::post('/update/{id}',[ProductController::class, 'updateData'])->name('update');
 Route::get('/delete/{id}',[ProductController::class, 'deleteData'])->name('delete');
+
+
