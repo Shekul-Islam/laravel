@@ -4,7 +4,7 @@ import { Head } from '@inertiajs/react';
 
 export default function Print({ transaction, store }) {
     const formatPrice = (price) => {
-        return price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
+        return price.toLocaleString('id-ID', { style: 'currency', currency: 'BDT' });
     };
 
     useEffect(() => {
